@@ -26,3 +26,7 @@ How to run this project:-
 3) Go to src -> server -> server.js and type your own mongoDB URI in const dbUri.
 4) In server folder run "node server.js" to start server side code.
 5) Open src folder and run "npm start" in terminal to start client side code.
+
+One bug:- If you want to register new "user", In dropdown bar first click "admin" and then again "user". 
+
+For admin registration it works fine, you can directly click "admin" in dropdown bar.
