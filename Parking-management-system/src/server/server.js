@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
 const router = express.Router();
 
 // MongoDB Connection
-const dbUri = "mongodb+srv://Yash:9Zx26NvyJAjmmqTR@cluster0.78u6r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const dbUri = ""; //Add your mongoDB URI here
 mongoose.connect(dbUri, { useFindAndModify: false, useNewUrlParser: true, useUnifiedTopology: true });
 let db = mongoose.connection;
 
