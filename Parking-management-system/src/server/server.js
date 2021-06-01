@@ -62,22 +62,12 @@ router.post("/register", (req,res) => {
     };
 
     new user(entry).save((err, data) => {
-        console.log("entry ", data);
-        console.log("data error", err);
         if (err || !data) return res.status(400).json({
             success: false,
             message: "Unable to update"
         });
+        return res.json({ success: true, data });
 
-        user.create(entry, (err, data) => {
-            console.log("data ", data)
-            if (err || !data) return res.status(400).json({
-                success: false,
-                message: "Unable to insert"
-            });
-
-            return res.json({ success: true, data });
-        });
     });
 });
 
